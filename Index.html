@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/71c6b78c5d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <h1>KEI'S PF</h1>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">NEWS</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Actions speak louder than words.</h1>
+            <p>志を立てて、道は拓ける</p>
+            <a href="#" class="hero-btn">Visit Me To Know More</a>
+        </div>
+    </section>
+
+    <section class="course">
+        <h1>My Skills</h1>
+        <p>大学4年間で学んだこと</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>English</h3>
+                <p>
+                    アメリカに留学を目標にTOEFLの勉強を行ってきました。点数は89点で現在英会話力に自信があります。現在英検1級合格に向けて学習中。
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>プログラミング</h3>
+                <p>
+                    主に、Ruby On Railsを学習してきました。1年間プログラミングメンターとしてRubyを指導してきました。
+                    現在はHTML,CSS,Javascriptの知識やウェブ制作を通してスキルアップを試みています。
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>ブリッジエンジニア</h3>
+                <p>
+                    VRのベンチャーにインターンシップとして務めていました。主な業務としては、海外のVRの企業とのローカライゼーション、
+                    技術面でのコミュニケーションの円滑化。英語を使って行なっていました。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience">
+        <h1>私の経験</h1>
+        <p>I always try new things to expand my posibilities</p>
+
+        <div class="row">
+            <div class="experience-col">
+                <img src="images/travel4.jpg" alt="Traveling">
+                <div class="layer">
+                    <h3>Traveling</h3>
+                </div>
+            </div>
+            <div class="experience-col">
+                <img src="images/skateboard.jpg" alt="SkateBoard">
+                <div class="layer">
+                    <h3>Skateboard</h3>
+                </div>
+            </div>
+            <div class="experience-col">
+                <img src="images/meditation2.jpg" alt="Meditation">
+                <div class="layer">
+                    <h3>Meditation</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="strength">
+        <h1>My Strength</h1>
+        <p>Experience is not what happens to you; it's what you do with what happens to you.</p>
+
+        <div class="row">
+            <div class="strength-col">
+                <img src="images/plan.jpg" alt="Library">
+                <h3>計画性と時間厳守</h3>
+                <p>
+                    私は計画性と時間厳守に強みを持っています。明確な目標を設定し、効果的な計画を立て、その計画に従って行動することで、効率的かつ効果的に仕事を進め、期限を厳守します。
+                </p>
+            </div>
+            <div class="strength-col">
+                <img src="images/study.jpg" alt="Playground">
+                <h3>学習へのモチベーション</h3>
+                <p>
+                    常に自分磨きへの意欲を持ち、学習に積極的に取り組んでいます。新しい知識を吸収し、スキルの向上を追求することで、個人としての成長を重視し、持続的なモチベーションを保っています。
+                </p>
+            </div>
+            <div class="strength-col">
+                <img src="images/team.jpg" alt="Cafeteria">
+                <h3>マネージメント力</h3>
+                <p>
+                    プロジェクトリーダーの経験から、リーダーシップと仲間とのコミュニケーションに自信があります。的確な指導と柔軟なコミュニケーションを通じて、チームメンバーとの協力を促進し、共に目標達成に向けて努力しています。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h1>お問い合わせはこちらから</h1>
+        <a href="" class="hero-btn">CONTACT ME</a>
+    </section>
+
+    <section class="footer">
+        <h4>About Me</h4>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>Made by Kei Nishiyama</p>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
